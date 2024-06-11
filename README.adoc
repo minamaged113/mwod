@@ -1,0 +1,17 @@
+= MWOD
+A simple stopwatch application
+:doctype: book
+:author: Mina Ghobrial
+:email: minamaged113@gmail.com
+:reproducible:
+:toc: left
+:sectnums:
+:sectnumlevels: 5
+
+== Design Information
+
+=== Color palette
+
+- Main color: #1C3144
+- Accent 1: #FFBA08
+- Accent 2: #81F495

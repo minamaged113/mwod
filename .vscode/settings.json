@@ -1,0 +1,17 @@
+{
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modifications",
+    "doxdocgen.generic.authorEmail": "minamaged113@gmail.com",
+    "doxdocgen.generic.authorName": "Mina Ghobrial",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.autoGuessEncoding": true,
+    "files.insertFinalNewline": true,
+    "doxdocgen.file.copyrightTag": [
+        "@copyright Copyright (c) Mina Ghobrial {year} under MIT LICENSE"
+    ]
+}

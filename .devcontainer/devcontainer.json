@@ -1,0 +1,39 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.0/containers/ubuntu
+{
+	"name": "minasdev",
+	"image": "minamaged113/ccpp:3.0.0",
+	"containerUser": "mina",
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "mina",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"twxs.cmake",
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cpptools-extension-pack",
+				"eamodio.gitlens",
+				"donjayamanne.githistory",
+				"asciidoctor.asciidoctor-vscode",
+				"xaver.clang-format",
+				"streetsidesoftware.code-spell-checker",
+				"cschlosser.doxdocgen",
+				"esbenp.prettier-vscode",
+				"Remisa.shellman",
+				"foxundermoon.shell-format"
+			],
+			"settings": {
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "terminal.integrated.profiles.linux": { "zsh": { "path": "/bin/zsh" } }
+            }
+		}
+	},
+	"mounts": [
+		"source=${localEnv:HOME}/.ssh,target=/home/mina/.ssh,type=bind"
+	],
+	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+}
